@@ -15,8 +15,9 @@ import java.util.Map;
 
 public class PhoneInfoModule extends WXModule {
 
-  @JSMethod(uiThread = false)
+  @JSMethod(uiThread = true)
   public void getPhoneInfo(JSCallback callback) {
+    System.out.println("getPhoneInfo");
     Map<String, String> infos = new HashMap<>();
     infos.put("board", Build.BOARD);
     infos.put("brand", Build.BRAND);

@@ -12,8 +12,6 @@ import com.taobao.weex.IWXRenderListener;
 import com.taobao.weex.WXSDKInstance;
 import com.taobao.weex.common.WXRenderStrategy;
 
-import java.util.HashMap;
-
 
 public class WeexFragment extends Fragment implements IWXRenderListener {
 
@@ -48,9 +46,9 @@ public class WeexFragment extends Fragment implements IWXRenderListener {
     mBundleUrl = getArguments() != null ? getArguments().getString(WXSDKInstance.BUNDLE_URL) : null;
     mWXSDKInstance = new WXSDKInstance(getActivity());
     mWXSDKInstance.registerRenderListener(this);
-    HashMap<String, Object> options = new HashMap<>();
-    options.put(WXSDKInstance.BUNDLE_URL, mBundleUrl);
-    mWXSDKInstance.renderByUrl("Weex Fragment Sample", mBundleUrl,options, null, WXRenderStrategy.APPEND_ASYNC);
+//    HashMap<String, Object> options = new HashMap<>();
+//    options.put(WXSDKInstance.BUNDLE_URL, mBundleUrl);
+    mWXSDKInstance.renderByUrl("Weex Fragment Sample", "http://193.0.1.157:8080/dist/weex/views/home/app.js",null, null, WXRenderStrategy.APPEND_ASYNC);
   }
 
   @Override

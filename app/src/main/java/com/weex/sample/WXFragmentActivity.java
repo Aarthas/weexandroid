@@ -7,7 +7,7 @@ import android.support.v7.widget.Toolbar;
 
 public class WXFragmentActivity extends AppCompatActivity {
 
-  private static final String EXAMPLE_URL="http://dotwe.org/raw/dist/b22f2a3b087c7fd02471c76e066f0f23.bundle.js";
+  private static final String EXAMPLE_URL="http://193.0.1.157:8080/dist/weex/views/home/app.js";
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
